@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "author": "ilyaigpetrov",
   "scripts": {
+    "start": "npm run build",
     "build": "browserify ./index.js -o ./bundle.js"
   },
   "browser": {
-    "readline": "../../vendor/readline.js"
+    "readline": "../../vendor/node/lib/readline.js"
   },
   "browserify": {
     "transform": [ "../../transforms/builtin-constants.js" ]

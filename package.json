@@ -15,10 +15,10 @@
     "internal/assert": "assert/build/assert.js",
     "internal/util": "util/util.js",
     "internal/util/inspect": "util/util.js",
-    "internal/errors": "./vendor/internal-errors.js",
-    "internal/validators": "./vendor/internal-validators.shaked.js",
-    "internal/readline": "./vendor/internal-readline.js",
-    "readline": "./vendor/readline.js"
+    "internal/errors": "./vendor/node/lib/internal/errors.js",
+    "internal/validators": "./vendor/node/lib/internal/validators.shaked.js",
+    "internal/readline":  "./vendor/node/lib/internal/readline.js",
+    "readline": "./vendor/node/lib/readline.js"
   },
   "dependencies": {
     "assert": "^2.0.0",
