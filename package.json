@@ -2,9 +2,11 @@
   "name": "readline-browserify-2",
   "version": "0.0.0",
   "description": "",
-  "main": "./dist/readline.js",
+  "main": "./vendor/node/lib/readline.js",
   "scripts": {
-    "build": "browserify ./vendor/readline.js -o ./dist/readline.js"
+    "build": "rollup -c",
+    "buildUSELESS": "browserify ./vendor/node/lib/readline.js -o ./dist/readline.js -s readline",
+    "start": "npm run build"
   },
   "browserify": {
     "transform": [

@@ -7,7 +7,8 @@
     "build": "browserify ./index.js -o ./bundle.js"
   },
   "browser": {
-    "readline": "../../vendor/node/lib/readline.js"
+    "readline2": "../../vendor/node/lib/readline.js",
+    "readline": "../../dist/readline.js"
   },
   "browserify": {
     "transform": [ "../../transforms/builtin-constants.js" ]
